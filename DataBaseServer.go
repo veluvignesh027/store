@@ -163,7 +163,7 @@ func handleDELETEConnection(req *http.Request) (*http.Response, error) {
 		if err != nil {
 			log.Println(err)
 		} else {
-			log.Println("Successfully deleted content file: ", content)
+			log.Println("Successfully Deleted content file: ", content)
 		}
 
 		ret, err := deleteFromFile(content, req.URL.Path+"/"+"Delivermetadata.json")
